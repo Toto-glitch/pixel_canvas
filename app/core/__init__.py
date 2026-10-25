@@ -1,6 +1,7 @@
 from .config import settings
 from .database import close_db_connection, engine, get_session
 from .exceptions import (
+    CooldownException,
     InvalidCredentialsException,
     TokenException,
     UserAlreadyExistsException,
@@ -14,6 +15,7 @@ from .security import (
 )
 
 __all__ = (
+    "CooldownException",
     "InvalidCredentialsException",
     "TokenException",
     "UserAlreadyExistsException",

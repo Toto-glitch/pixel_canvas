@@ -8,3 +8,7 @@ class UserAlreadyExistsException(Exception):
 
 class InvalidCredentialsException(Exception):
     """User credentials are invalid"""
+
+
+class CooldownException(Exception):
+    """This user has cooldown"""
